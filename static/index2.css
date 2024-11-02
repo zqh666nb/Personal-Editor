@@ -1,4 +1,11 @@
 /* 基本重置 */
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "Regular";font-weight: 500;src: url("//at.alicdn.com/wf/webfont/mxblSXarYhDN/zhKKh7kFpSIc.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/mxblSXarYhDN/ry5UAY0geuOJ.woff") format("woff");
+    font-display: swap;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +15,7 @@
 
 /* 整体页面样式 */
 body {
-    background-color: #f0f4f8;
+    background-color: #ffffff;
     color: #333;
     font-size: 16px;
     line-height: 1.6;
@@ -20,8 +27,9 @@ body {
 h1 {
     color: #3f81ec;
     margin-bottom: 30px;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 300;
+    font-family: 'Regular', sans-serif;
 }
 
 /* 表单样式 */
@@ -65,7 +73,7 @@ input[type="text"]:focus {
 
 /* 单选按钮和标签样式 */
 [type="radio"] {
-    margin-right: 8px;
+    margin-right: 12px;
     vertical-align: middle;
 }
 
