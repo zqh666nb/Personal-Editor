@@ -34,5 +34,11 @@
         "amount": -123.0,
         "category": "\u4ea4\u901a",
         "note": "\u65e0"
+    },
+    {
+        "date": "2024-11-02",
+        "amount": 29.0,
+        "category": "\u5403\u996d",
+        "note": "\u70e4\u9e2d"
     }
 ]
