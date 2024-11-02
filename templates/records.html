@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Records</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Expense Records</h1>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Note</th>
+        </tr>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.date }}</td>
+            <td>{{ record.amount }}</td>
+            <td>{{ record.category }}</td>
+            <td>{{ record.note }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Add New Record</a>
+</body>
+</html>
