@@ -40,5 +40,23 @@
         "amount": 456.0,
         "category": "456",
         "note": "456"
+    },
+    {
+        "date": "2024-09-05",
+        "amount": -4.0,
+        "category": "45",
+        "note": "456"
+    },
+    {
+        "date": "2024-05-17",
+        "amount": 1.0,
+        "category": "12",
+        "note": "12"
+    },
+    {
+        "date": "2024-06-13",
+        "amount": 576.0,
+        "category": "546",
+        "note": "456"
     }
 ]
