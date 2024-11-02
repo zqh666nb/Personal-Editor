@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Personal Expense Tracker</h1>
+    <form action="/add_record" method="POST">
+        <label>Date (YYYY-MM-DD): <input type="date" name="date" required></label><br>
+        <label>Type:</label><br>
+        <input type="radio" id="income" name="type" value="income" checked>
+        <label for="income">Income</label><br>
+        <input type="radio" id="expense" name="type" value="expense">
+        <label for="expense">Expense</label><br>
+        <label>Amount: <input type="number" name="amount" step="0.01" required></label><br>
+        <label>Category: <input type="text" name="category" required></label><br>
+        <label>Note: <input type="text" name="note"></label><br>
+        <button type="submit">Add Record</button>
+    </form>
+    <a href="/view_records">View Records</a>
+    <a href="/monthly_statistics">View Monthly Statistics</a>
+</body>
+</html>
