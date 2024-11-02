@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>时光记账簿</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index2.css') }}">
 </head>
+
 <body>
     <h1>时光记账簿</h1>
     <form action="/add_record" method="POST">
@@ -24,4 +26,5 @@
     <a href="/monthly_statistics">查看每月收据</a>
     <a href="/line_chart">查看月度数据图</a>
 </body>
+
 </html>
