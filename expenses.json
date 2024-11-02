@@ -1,74 +1,26 @@
 [
     {
         "date": "2024-11-06",
-        "amount": 11.0,
+        "amount": 110.0,
         "category": "\u5de5\u8d44",
         "note": "\u65e0"
     },
     {
         "date": "2024-11-06",
-        "amount": -2.0,
-        "category": "\u5de5\u8d44",
-        "note": "\u65e0"
-    },
-    {
-        "date": "2024-10-19",
-        "amount": 1.0,
+        "amount": 200.0,
         "category": "\u5de5\u8d44",
         "note": "\u65e0"
     },
     {
         "date": "2024-10-26",
-        "amount": -12.0,
+        "amount": 1200.0,
         "category": "\u5de5\u8d44",
         "note": "\u65e0"
     },
     {
-        "date": "2024-11-07",
-        "amount": 0.02,
-        "category": "123",
-        "note": "123"
-    },
-    {
-        "date": "2024-10-30",
-        "amount": 12.0,
-        "category": "123",
-        "note": "123"
-    },
-    {
-        "date": "2024-12-18",
-        "amount": 4.0,
-        "category": "456",
-        "note": "456"
-    },
-    {
-        "date": "2024-09-05",
-        "amount": -4.0,
-        "category": "45",
-        "note": "456"
-    },
-    {
-        "date": "2024-05-17",
-        "amount": 1.0,
-        "category": "12",
-        "note": "12"
-    },
-    {
-        "date": "2024-06-13",
-        "amount": 6.0,
-        "category": "546",
-        "note": "456"
-    },
-    {
-        "date": "2024-11-16",
-        "amount": 6.0,
-        "category": "456",
-        "note": "456"
-    },
-    {
         "date": "2024-11-02",
-        "amount": 1.0,
-        "category": "\u73b0\u91d1",
-        "note": "\u65e0"
+        "amount": -250.0,
+        "category": "\u4ea4\u901a",
+        "note": "\u6ef4\u6ef4"
     }
 ]
