@@ -22,5 +22,17 @@
         "amount": -250.0,
         "category": "\u4ea4\u901a",
         "note": "\u6ef4\u6ef4"
+    },
+    {
+        "date": "2024-11-07",
+        "amount": 1111.0,
+        "category": "\u5de5\u8d44",
+        "note": "\u65e0"
+    },
+    {
+        "date": "2024-11-21",
+        "amount": -123.0,
+        "category": "\u4ea4\u901a",
+        "note": "\u65e0"
     }
 ]
