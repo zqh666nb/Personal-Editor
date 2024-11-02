@@ -1,0 +1,128 @@
+/* 基本重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* 整体页面样式 */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 40px;
+    text-align: center;
+}
+
+/* 标题样式 */
+h1 {
+    color: #1a56f0;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+/* 表单样式 */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* 标签和输入框样式 */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-weight: 500;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dfe4ea;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus {
+    border-color: #1a56f0;
+    outline: none;
+}
+
+/* 单选按钮和标签样式 */
+[type="radio"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+[type="radio"] + label {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* 按钮样式 */
+button {
+    background-color: #1a56f0;
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #163f92;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* 链接样式 */
+a {
+    display: inline-block;
+    margin: 10px 15px;
+    color: #1a56f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #163f92;
+}
+
+/* 底部链接样式 */
+.links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #1a56f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #163f92;
+}
