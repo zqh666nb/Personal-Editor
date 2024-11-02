@@ -22,5 +22,23 @@
         "amount": -1233.0,
         "category": "\u5de5\u8d44",
         "note": "\u65e0"
+    },
+    {
+        "date": "2024-11-07",
+        "amount": 0.02,
+        "category": "123",
+        "note": "123"
+    },
+    {
+        "date": "2024-10-30",
+        "amount": 123.0,
+        "category": "123",
+        "note": "123"
+    },
+    {
+        "date": "2024-12-18",
+        "amount": 456.0,
+        "category": "456",
+        "note": "456"
     }
 ]
