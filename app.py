@@ -52,7 +52,8 @@ def add_record():
 @app.route('/view_records')
 def view_records():
     data = load_data()
-    return render_template('records.html', records=data)
+    sorted_data = sorted(data, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%d'))
+    return render_template('records.html', records=sorted_data)
 
 @app.route('/monthly_statistics')
 def monthly_statistics():
