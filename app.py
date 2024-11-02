@@ -52,7 +52,8 @@ def add_record():
 @app.route('/view_records')
 def view_records():
     data = load_data()
-    return render_template('records.html', records=data)
+    sorted_data = sorted(data, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%d'))
+    return render_template('records.html', records=sorted_data)
 
 @app.route('/monthly_statistics')
 def monthly_statistics():
@@ -68,8 +69,10 @@ def monthly_statistics():
             monthly_stats[month]['income'] += amount
         else:
             monthly_stats[month]['expenses'] += abs(amount)  # 记录为正值
-
-    return render_template('monthly_statistics.html', stats=monthly_stats)
+     # 对monthly_stats进行排序，确保按月份顺序显示
+    sorted_monthly_stats = dict(sorted(monthly_stats.items(), key=lambda item: datetime.strptime(item[0], '%Y-%m')))
+    # 将排序后的结果传递给模板
+    return render_template('monthly_statistics.html', stats=sorted_monthly_stats)
 
 @app.route('/statistics')
 def statistics():

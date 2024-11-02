@@ -22,5 +22,53 @@
         "amount": -1233.0,
         "category": "\u5de5\u8d44",
         "note": "\u65e0"
+    },
+    {
+        "date": "2024-11-07",
+        "amount": 0.02,
+        "category": "123",
+        "note": "123"
+    },
+    {
+        "date": "2024-10-30",
+        "amount": 123.0,
+        "category": "123",
+        "note": "123"
+    },
+    {
+        "date": "2024-12-18",
+        "amount": 456.0,
+        "category": "456",
+        "note": "456"
+    },
+    {
+        "date": "2024-09-05",
+        "amount": -4.0,
+        "category": "45",
+        "note": "456"
+    },
+    {
+        "date": "2024-05-17",
+        "amount": 1.0,
+        "category": "12",
+        "note": "12"
+    },
+    {
+        "date": "2024-06-13",
+        "amount": 576.0,
+        "category": "546",
+        "note": "456"
+    },
+    {
+        "date": "2024-11-16",
+        "amount": 456.0,
+        "category": "456",
+        "note": "456"
+    },
+    {
+        "date": "2024-11-02",
+        "amount": 111.0,
+        "category": "\u73b0\u91d1",
+        "note": "\u65e0"
     }
 ]
