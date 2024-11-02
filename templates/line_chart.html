@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthly Line Chart</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='line_chart.css') }}">
 </head>
 <body>
-    <h1>Monthly Line Chart</h1>
+    <h1>月度统计表</h1>
     {% if chart_url %}
-        <img src="data:image/png;base64,{{ chart_url }}" alt="Monthly Line Chart">
+        <img class="center-image" src="data:image/png;base64,{{ chart_url }}" alt="Monthly Line Chart">
     {% else %}
         <p>暂无数据，无法生成图表。</p>
     {% endif %}
-    <a href="/">Add New Record</a>
-    <a href="/view_records">View Records</a>
-    <a href="/monthly_statistics">View Monthly Statistics</a>
+    <div class="links">
+        <a href="/">添加新记录</a>
+        <a href="/view_records">查看详细记录</a>
+        <a href="/monthly_statistics">浏览月度数据</a>
+    </div>
 </body>
 </html>
