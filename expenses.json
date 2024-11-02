@@ -1,0 +1,26 @@
+[
+    {
+        "date": "2024-11-06",
+        "amount": 1323131.0,
+        "category": "\u5de5\u8d44",
+        "note": "\u65e0"
+    },
+    {
+        "date": "2024-11-06",
+        "amount": -2132.0,
+        "category": "\u5de5\u8d44",
+        "note": "\u65e0"
+    },
+    {
+        "date": "2024-10-19",
+        "amount": 1234.0,
+        "category": "\u5de5\u8d44",
+        "note": "\u65e0"
+    },
+    {
+        "date": "2024-10-26",
+        "amount": -1233.0,
+        "category": "\u5de5\u8d44",
+        "note": "\u65e0"
+    }
+]
