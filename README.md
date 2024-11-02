@@ -2,7 +2,7 @@
 
 ## 简介
 
-个人记账本应用是一款简单易用的网页记账工具，用户可以记录和管理自己的收入与支出。该应用通过 Flask 框架构建后端，使用 HTML、CSS 和 JavaScript 实现前端界面，并能够将数据以 JSON 格式保存到本地文件中，便于后续查看和统计。
+个人记账本应用是一款简单易用的网页记账工具，用户可以记录和管理自己的收入与支出。该应用通过 Flask 框架构建后端，使用 HTML、CSS 实现前端界面，并能够将数据以 JSON 格式保存到本地文件中，便于后续查看和统计。
 
 ## 特性
 
@@ -16,20 +16,26 @@
 ## 技术栈
 
 - **后端**：Python（Flask 框架）
-- **前端**：HTML、CSS 和 JavaScript
+- **前端**：HTML、CSS 
 - **数据存储**：JSON 文件
 
 ## 文件结构
-
-- project/
-- │
-- ├── app.py                 # Flask 应用的主文件
-- ├── expenses.json          # 数据存储文件
-- ├── requirements.txt       # Python 依赖库列表
-- └── templates/             # 存放 HTML 模板的文件夹
-- ├── index.html        # 主页面模板
-- ├── records.html      # 记录页面模板
-- └── monthly_statistics.html # 月度统计页面模板
+project/
+│
+├── app.py                   # Flask 应用的主文件
+├── expenses.json            # 数据存储文件
+├── requirements.txt         # Python 依赖库列表
+│
+├── static/                  # 存放静态文件的文件夹
+│   ├── index2.css           # 主页面的样式文件
+│   ├── line_chart.css       # 折线图页面的样式文件
+│   └── style.css            # 通用样式文件
+│
+└── templates/               # 存放 HTML 模板的文件夹
+    ├── index.html           # 主页面模板
+    ├── line_chart.html      # 折线图页面模板
+    ├── monthly_statistics.html # 月度统计页面模板
+    └── records.html         # 记录页面模板
 
 ##程序运行环境
 
@@ -69,7 +75,7 @@ python -m ensurepip --upgrade
 
 
 ### 5. 运行 Flask 应用
-可以在本地编辑器中打开文件运行app.py
+在编译器（推荐vscode）中打开该项目文件，根据requirements.txt中的要求安装好相应的库，然后可以在终端中打开文件运行app.py
 
 ### 6. 访问应用
 
