@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 import json
 import os
+import io
+import matplotlib.pyplot as plt
+import base64
 from collections import defaultdict
 from datetime import datetime
+
 
 app = Flask(__name__)
 filename = 'expenses.json'
@@ -80,7 +84,46 @@ def statistics():
     income = sum(record['amount'] for record in data if record['amount'] > 0)
     expenses = sum(record['amount'] for record in data if record['amount'] < 0)
     return jsonify({'total_income': income, 'total_expenses': expenses})
+@app.route('/line_chart')
+def generate_line_chart():
+    data = load_data()
+    if not data:
+        return render_template('line_chart.html', chart_url=None)
 
+    monthly_stats = defaultdict(lambda: {'income': 0, 'expenses': 0, 'profit': 0})
+
+    for record in data:
+        date = record['date']
+        amount = record['amount']
+        month = datetime.strptime(date, '%Y-%m-%d').strftime('%Y-%m')  # 获取月份字符串
+
+        if amount > 0:
+            monthly_stats[month]['income'] += amount
+        else:
+            monthly_stats[month]['expenses'] += abs(amount)  # 记录为正值
+        monthly_stats[month]['profit'] = monthly_stats[month]['income'] - monthly_stats[month]['expenses']
+
+    months = list(monthly_stats.keys())
+    incomes = [monthly_stats[month]['income'] for month in months]
+    expenses = [monthly_stats[month]['expenses'] for month in months]
+    profits = [monthly_stats[month]['profit'] for month in months]
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(months, incomes, label='Total Income', marker='o')
+    plt.plot(months, expenses, label='Total Expenses', marker='o')
+    plt.plot(months, profits, label='Profit', marker='o')
+    plt.xlabel('Month')
+    plt.ylabel('Amount')
+    plt.title('Monthly Statistics')
+    plt.legend()
+
+    img = io.BytesIO()
+    plt.savefig(img, format='png')
+    img.seek(0)
+    chart_url = base64.b64encode(img.getvalue()).decode('utf8')
+    plt.close()
+
+    return render_template('line_chart.html', chart_url=chart_url)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Line Chart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Monthly Line Chart</h1>
+    {% if chart_url %}
+        <img src="data:image/png;base64,{{ chart_url }}" alt="Monthly Line Chart">
+    {% else %}
+        <p>暂无数据，无法生成图表。</p>
+    {% endif %}
+    <a href="/">Add New Record</a>
+    <a href="/view_records">View Records</a>
+    <a href="/monthly_statistics">View Monthly Statistics</a>
+</body>
+</html>
