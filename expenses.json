@@ -64,5 +64,11 @@
         "amount": 456.0,
         "category": "456",
         "note": "456"
+    },
+    {
+        "date": "2024-11-02",
+        "amount": 111.0,
+        "category": "\u73b0\u91d1",
+        "note": "\u65e0"
     }
 ]
